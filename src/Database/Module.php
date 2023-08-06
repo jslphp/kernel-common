@@ -66,9 +66,7 @@ class Module extends AbstractModule
         });
 
         // Pass the default connection to the models
-        Models::setConnection(
-            fn () => $kernel->get($kernel->get(ConnectionInterface::class))
-        );
+        Models::setConnection(fn () => $kernel->get(ConnectionInterface::class));
     }
 
 
