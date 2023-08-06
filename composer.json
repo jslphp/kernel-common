@@ -1,0 +1,35 @@
+{
+    "name": "jsl/kernel-common",
+    "description": "Common modules for the Kernel",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Magnus Eriksson",
+            "email": "mange@reloop.se"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../models"
+        },
+        {
+            "type": "path",
+            "url": "../kernel"
+        }
+
+    ],
+    "require": {
+        "league/plates": "3.5.0",
+        "jsl/models": "dev-develop",
+        "jsl/kernel": "dev-main",
+        "jsl/ensure": "0.3.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jsl\\Common\\": "src/"
+        }
+    }
+}
